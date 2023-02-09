@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+   
+    
+}
+body{
+    background-color: #020000;
+    color: #fff;
+}
+#header{
+    background-image: url("img/z.png");
+    background-position: top 0% right 0%;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+ 
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 50%;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+}
+nav ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+.container nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1a0109;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s ease;
+}
+nav ul li a:hover::after{
+    width: 120%;
+}
+.header-text{
+    color: #1a0109;
+    margin: 12% 130px;
+}
+.header-text h2 span{
+    font-size: 30px;
+    font-weight: bold;
+    color: tomato;
+}
+/*about section*/
+
+.blog-box{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 86vh;
+    width: 1140px;
+    padding-top: 5px;
+    margin-left: 90px;
+   /* margin: 0 100px 0 85px;*/
+}
+   
+.blog-img img{
+  width: 500px;
+  margin: 0 30px 0 30px;
+  border-radius: 5%;
+}
+.blog-box.blog-details{
+    width: 500px;
+    position: fixed;
+}
+.blog-box.blog-details p{
+    width: 500px;
+}
+.blog-box.blog-details a{
+    text-decoration: none;
+    font-weight: bold; 
+    color: #1a0109;
+    
+}
+
+.blog-box.blog-details a:hover{
+   color: tomato;
+   transition: 0.4s ease;
+}
+
+.tab-links{
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: tomato;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s ease;
+}
+.tab-links.active-link::after{
+    width: 40%;
+
+}
+.tab-titles{
+    position: fixed;
+}
+.tab-titles a{
+    text-decoration: none;
+    margin: 5px 10px;
+    color: rgb(12, 4, 4) ;
+    
+}
+.lab-links{
+    position: fixed;
+}
+.tab-contents{
+    
+padding-top: 30px;
+    
+}
+.tab-contents li{
+
+    list-style: none;
+   margin: 10px 0;
+   padding: 5px 10px;
+}
+.tab-contents li span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*.blog-box.blog-details .my-self li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1a0109;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s ease;
+}
+.blog-box.blog-details .my-self li a:hover:after{
+    width: 120px;
+}*/
+
+/* service*/
+#services{
+    padding: 40px 0;
+    margin: 0px 81px;
+}
+#services .container {
+    margin: 20px 45px 0 45px
+}
+.sub-title{
+    padding-left: 400px;
+}
+.Services-list{
+    padding: 30px 0 210px 0;
+}
+.box{
+    margin-left: 45px ;
+    box-shadow: gray ;
+    background-color: rgb(170, 172, 165);
+    transition: 0.6s ease;
+}
+.box a{
+    text-decoration: none;
+    
+    color: rgb(255, 255, 255);
+}
+.box:hover{
+    background-color: rgb(231, 0, 77);
+    transform: translateY(-10px);
+}
+
+/*Contact page*/
+ .contact-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 86vh;
+    width: 1140px;
+    padding-top: 5px;
+    margin-left: 90px;
+ }
+
+.contact-img img{
+    width: 350px;
+    margin: 25px 30px 0 70px;
+    border-radius: 5%;
+    height: 450px;
+}
+.social-icons{
+    margin-top: 0;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    padding: 10px;
+    font-style: italic;
+}
+.contact-details{
+    margin-top: 10px;
+    width: 500px;
+    position: fixed;
+}
+.contact-details form{
+    width: 100%;
+}
+.submit{
+    background-color: #808080;
+    margin-left: 200px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+.submit:hover{
+    background-color: rgb(253, 0, 127);
+    color: #020000;
+}
+form input,form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #dddcdc;
+    padding: 10px;
+    margin: 15px 0;
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+    border-radius: 5px;
+
+}
